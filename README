@@ -1,0 +1,4 @@
+
+I had trouble getting various oauth plugins to work with sinitra/rails to get an oauth access token for my personal google user. 
+
+The rails app, late, finally solved this. HOWEVER, I had to use the oauth plugin v=0.3.1 for the initial session/new request, then restart the server and use oauth plugin v=0.4 for the session/create request. It's hacky, but it worked for me.
