@@ -6,7 +6,7 @@ require 'oauth'
 require 'yaml'
 @redis = Redis.new
 
-@config = YAML::load(File.open('config.yml').read)
+@config = YAML::load(File.open(File.dirname(__FILE__)+'/config.yml').read)
 @instamapper_api_key = @config["instamapper_api_key"]
 @consumer_key = @config["consumer_key"]
 @consumer_secret = @config["consumer_secret"]
